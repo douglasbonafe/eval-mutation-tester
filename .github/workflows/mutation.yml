@@ -1,0 +1,24 @@
+name: eval-mutation
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  mutation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run judge:validate # fails if kappa < THRESHOLDS.minJudgeKappa
+      - run: npm run mutate # fails on invalid baseline, score < minMutationScore or false alarms > maxFalseAlarmRate (src/score.ts)
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mutation-report
+          path: report.md
