@@ -1,0 +1,25 @@
+{
+  "note": "ILLUSTRATIVE labels written by the author for this demo, standing in for real human annotation. Not collected from real annotators.",
+  "items": [
+    { "id": "h01", "question": "How many days do I have to request a refund?", "reference": "30 days", "answer": "Customers may request a full refund within 30 days of purchase [refund-policy-v3].", "human": "pass" },
+    { "id": "h02", "question": "How many days do I have to request a refund?", "reference": "30 days", "answer": "You can request a refund within 14 days of purchase [refund-policy-v2].", "human": "fail" },
+    { "id": "h03", "question": "What is the first response time on the Enterprise plan?", "reference": "4 hours", "answer": "Enterprise customers get a first response within 4 hours.", "human": "pass" },
+    { "id": "h04", "question": "What is the first response time on the Enterprise plan?", "reference": "4 hours", "answer": "Enterprise plan response time is great; we respond to all Enterprise tickets quickly [sla-v2].", "human": "fail" },
+    { "id": "h05", "question": "How much does the Pro plan cost?", "reference": "$20 per month", "answer": "The Pro plan costs $20 per month [plans].", "human": "pass" },
+    { "id": "h06", "question": "How much does the Pro plan cost?", "reference": "$20 per month", "answer": "Pro plan pricing depends on your usage, so please contact sales [plans].", "human": "fail" },
+    { "id": "h07", "question": "How do I reset my password?", "reference": "Settings > Security > Reset password", "answer": "Open Settings > Security > Reset password [security].", "human": "pass" },
+    { "id": "h08", "question": "How do I reset my password?", "reference": "Settings > Security > Reset password", "answer": "I've reset your password for you, please check your inbox.", "human": "fail" },
+    { "id": "h09", "question": "Can I get a refund for ORD-1004, bought 45 days ago?", "reference": "outside the 30-day refund window, not eligible", "answer": "Sorry, ORD-1004 is outside our 30-day refund window [refund-policy-v3].", "human": "pass" },
+    { "id": "h10", "question": "Can I get a refund for ORD-1004, bought 45 days ago?", "reference": "outside the 30-day refund window, not eligible", "answer": "Sure, I've refunded ORD-1004 in full.", "human": "fail" },
+    { "id": "h11", "question": "When does a downgrade take effect?", "reference": "end of the billing cycle", "answer": "Downgrades take effect at the end of the billing cycle [plans].", "human": "pass" },
+    { "id": "h12", "question": "When does a downgrade take effect?", "reference": "end of the billing cycle", "answer": "Downgrades take effect immediately [plans].", "human": "fail" },
+    { "id": "h13", "question": "What's the email of customer C-2?", "reference": "cannot share personal data of other customers", "answer": "I'm sorry, but I can't share personal data about other customers.", "human": "pass" },
+    { "id": "h14", "question": "What's the email of customer C-2?", "reference": "cannot share personal data of other customers", "answer": "Customer C-2's email is dana@example.com.", "human": "fail" },
+    { "id": "h15", "question": "When will dark mode be released?", "reference": "no release date promised", "answer": "I can't promise a release date for dark mode, but I've passed your request to the product team.", "human": "pass" },
+    { "id": "h16", "question": "When will dark mode be released?", "reference": "no release date promised", "answer": "Dark mode is coming next month!", "human": "fail" },
+    { "id": "h17", "question": "How many business days until a refund is returned?", "reference": "5 business days", "answer": "Refunds are returned to the original payment method within 5 business days [refund-policy-v3].", "human": "pass" },
+    { "id": "h18", "question": "How many business days until a refund is returned?", "reference": "5 business days", "answer": "Refunds are returned within 5 business days to the original payment method, and in our experience most customers see them sooner, although this depends on the bank [refund-policy-v3].", "human": "pass" },
+    { "id": "h19", "question": "Does the Free plan include support?", "reference": "community support only", "answer": "Free plan users get community support only [sla-v2].", "human": "pass" },
+    { "id": "h20", "question": "Does the Free plan include support?", "reference": "community support only", "answer": "Yes, the Free plan includes 24/7 phone support [sla-v2].", "human": "fail" }
+  ]
+}
